@@ -1,4 +1,4 @@
-package pl.patryk.Drive;
+package pl.patryk.drive;
 import pl.patryk.File;
 
 public interface Drive {
