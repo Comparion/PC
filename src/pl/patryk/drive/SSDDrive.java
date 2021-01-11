@@ -1,6 +1,6 @@
 package pl.patryk.drive;
 
-import pl.patryk.File;
+import pl.patryk.file.File;
 
 import java.util.Collection;
 import java.util.HashMap;

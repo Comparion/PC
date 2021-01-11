@@ -1,5 +1,5 @@
 package pl.patryk.drive;
-import pl.patryk.File;
+import pl.patryk.file.File;
 
 public interface Drive {
     void addFile(File file);
