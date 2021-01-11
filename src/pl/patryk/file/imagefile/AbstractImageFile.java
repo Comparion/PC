@@ -7,7 +7,7 @@ import pl.patryk.file.FileType;
 public abstract class AbstractImageFile extends AbstractFile {
 
 
-    public AbstractImageFile(String name, int size) {
+    protected AbstractImageFile(String name, int size) {
         super(name, size);
     }
 

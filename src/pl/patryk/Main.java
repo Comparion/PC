@@ -1,29 +1,22 @@
 package pl.patryk;
 
 import pl.patryk.drive.HDDDrive;
+import pl.patryk.drive.SSDDrive;
+import pl.patryk.file.imagefile.GIFImageFile;
+import pl.patryk.file.imagefile.JPGImageFile;
+import pl.patryk.file.musicfile.MP3MusicFile;
 import pl.patryk.usbdevice.MemoryStick;
 import pl.patryk.usbdevice.Mouse;
 
 public class Main {
 
     public static void main(String[] args) {
-        Monitor monitor = new Monitor();
-        HDDDrive drive = new HDDDrive();
+        GIFImageFile gif1 = new GIFImageFile("nazwa1.gif", 100);
+        JPGImageFile jpg1 = new JPGImageFile("nazwa.jpg", 200, 80);
 
-        Computer computer = new Computer(monitor, drive);
+        MP3MusicFile mp3file = new MP3MusicFile("plik.mp3", 4000, "Marilyn Manson", "Broken Needle", 100);
 
-//        drive.addFile(new File("jnsp.jpg"));
-//        drive.listFiles();
-        MemoryStick memoryStick = new MemoryStick("Pendrive");
-        Mouse mouse = new Mouse("Mysz");
-
-        computer.addUSBDevice(memoryStick);
-        computer.addUSBDevice(mouse);
-
-        memoryStick.eject();
-
-        computer.removeUSBDevices(memoryStick);
-        computer.removeUSBDevices(mouse);
-
+        SSDDrive drive = new SSDDrive();
+        drive.addFile(gif1);
     }
 }
