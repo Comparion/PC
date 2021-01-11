@@ -2,6 +2,7 @@ package pl.patryk;
 
 import pl.patryk.drive.HDDDrive;
 import pl.patryk.drive.SSDDrive;
+import pl.patryk.file.File;
 import pl.patryk.file.imagefile.GIFImageFile;
 import pl.patryk.file.imagefile.JPGImageFile;
 import pl.patryk.file.musicfile.MP3MusicFile;
@@ -18,5 +19,12 @@ public class Main {
 
         SSDDrive drive = new SSDDrive();
         drive.addFile(gif1);
+        drive.addFile(jpg1);
+        drive.addFile(mp3file);
+
+        drive.listFiles();
+
+        File file = drive.findFile("plik.mp3");
+        System.out.println(file.getSize());
     }
 }
