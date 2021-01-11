@@ -1,3 +1,4 @@
+package pl.patryk;
 
 public class Monitor {
     private int width = 3840;

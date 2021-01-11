@@ -1,3 +1,4 @@
+package pl.patryk;
 
 public class HeadPhones {
     private final String name;

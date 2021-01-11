@@ -1,3 +1,5 @@
+package pl.patryk;
+
 public class Main {
 
     public static void main(String[] args) {
